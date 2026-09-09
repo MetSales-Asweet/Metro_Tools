@@ -148,3 +148,18 @@ Unrelated code cleanup or modernization will not be included in this branch.
 - Baseline commit: `9cf4840`.
 - Added project documentation.
 - No application source code changed.
+
+### 2026-09-09 - Development Environment Baseline
+
+- Installed and configured Visual Studio Community 2026 for the existing solution.
+- Installed the .NET Framework 4.5.2 Developer Pack required by MetroTools.
+- Configured NuGet.org as a package source.
+- Installed Git for Windows.
+- Verified development branch: `serial-import-compatibility`.
+- Visual Studio corrected the MetroTools project reference from the legacy external path:
+  `..\..\OpenInvoice\OpenInvoice\Metro.csproj`
+  to the repository-local path:
+  `..\Metro\Metro.csproj`
+- Verified the complete 3-project solution (`Metro`, `Metro.Core`, and `MetroTools`) builds successfully.
+- Baseline build result: 0 errors and 5 pre-existing warnings.
+- No serial-number application logic has been changed at this point.

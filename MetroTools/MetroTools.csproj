@@ -156,7 +156,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OpenInvoice\OpenInvoice\Metro.csproj">
+    <ProjectReference Include="..\Metro\Metro.csproj">
       <Project>{38ee3824-add9-422d-9f4b-875b8e6ce1b3}</Project>
       <Name>Metro</Name>
     </ProjectReference>
