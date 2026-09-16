@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>C:\Users\Adjit\Projects\metsales\1-Deployment-2026\Metro_Tools\</PublishUrl>
+    <PublishUrl>C:\MetroToolsPublish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>Metro Tools</ProductName>
     <PublisherName>Metropolitan Sales</PublisherName>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -54,11 +54,10 @@
     <ApplicationIcon>MetMW.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>3CC4DA8F0F8E8B9A35F6C8C88B03D7A9F39F031E</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9306683BDB34104E06C511E2EF41A5EC801E981E</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>MetroTools_4_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -117,6 +116,7 @@
     <None Include="MetroTools_1_TemporaryKey.pfx" />
     <None Include="MetroTools_2_TemporaryKey.pfx" />
     <None Include="MetroTools_3_TemporaryKey.pfx" />
+    <None Include="MetroTools_4_TemporaryKey.pfx" />
     <None Include="MetroTools_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
