@@ -139,7 +139,22 @@ ORDER BY LS.DOCDATE DESC</value>
     <comment>Query to get last 12 months credit card</comment>
   </data>
   <data name="serialQuery" xml:space="preserve">
-    <value>Select * From SOP10202 Where CMMTTEXT like '%{0}%' and SOPTYPE=3</value>
+<value>SELECT DISTINCT SOPNUMBE
+FROM
+(
+    SELECT SOPNUMBE
+    FROM dbo.SOP10201
+    WHERE SOPTYPE = 3
+      AND RTRIM(SERLTNUM) = '{0}'
+
+    UNION
+
+    SELECT SOPNUMBE
+    FROM dbo.SOP10202
+    WHERE SOPTYPE = 3
+      AND CMMTTEXT LIKE '%{0}%'
+) AS SerialInvoices
+ORDER BY SOPNUMBE</value>
     <comment>Query to lookup invoice by serial numbers</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />

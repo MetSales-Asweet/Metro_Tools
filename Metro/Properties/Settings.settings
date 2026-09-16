@@ -15,7 +15,7 @@
       <Value Profile="(Default)">9D66C48E88146328</Value>
     </Setting>
     <Setting Name="INVOICE_FALLBACK" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\METRO-GP1\Dynamics\MESSNGER\</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="AVALARA_ACCOUNT_ID" Type="System.String" Scope="Application">
       <Value Profile="(Default)">2000099535</Value>
